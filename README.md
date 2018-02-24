@@ -1,5 +1,5 @@
 ### Simple react boiler plate
 
 ```
-For small and test prodject
+For small and test project
 ```
