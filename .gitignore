@@ -2,4 +2,4 @@ node_modules
 .DS_Store
 .sass-cache
 css/main.css.map
-lib
+build
