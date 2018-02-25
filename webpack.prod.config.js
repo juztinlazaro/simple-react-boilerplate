@@ -79,6 +79,11 @@ module.exports = {
     }),
     new webpack.optimize.UglifyJsPlugin(),
     new ExtractTextPlugin({ filename: 'style.bundle.css' }),
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('production'),
+      },
+    }),
     new SWPrecacheWebpackPlugin({
       dontCacheBustUrlsMatching: /\.\w{8}\./,
       filename: 'service-worker.js',

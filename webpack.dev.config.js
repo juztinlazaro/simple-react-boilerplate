@@ -106,6 +106,11 @@ module.exports = {
       filename: 'index.html',
       inject: 'body',
     }),
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('development'),
+      },
+    }),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'manifest',
       children: true,
